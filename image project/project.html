@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>project</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        /*Header Section*/
+
+        header{
+            background-image: url(imge1.jpg);
+            background-size: cover;
+            height: 150px;
+        }
+        header h1{
+            color: white;
+            text-align: center;
+            padding-top: 20px;
+        }
+        header p{
+            color: white;
+            text-align: center;
+        }
+
+
+
+
+         /*Menu Section*/
+
+        .nav{
+            display: flex;
+            justify-content: flex-start;
+            background-color: black;
+        }
+        .nav li{
+            display: inline-block;
+            list-style: none;
+            padding: 8px 7px;
+        }
+        .nav li:hover{
+            transform: scale(1.1);
+        }
+        .nav li a{
+            text-decoration: none;
+            color: white;
+        }
+
+         /*FLEX Section*/
+
+        .container{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+           /*Left side Section*/
+
+        .left-side{
+            flex-basis: 500px;
+            width: 450px;
+        }
+        .left-side h1{
+            padding-left: 7px;
+            padding-top: 5px;
+            padding-bottom: 7px;
+        }
+        .left-side img{
+            width:440px;
+            border: 10px solid gray;
+            margin-left: 8px;
+            margin-top: 10px;
+        }
+
+        .left-side img:hover{
+            transform: scale(1.02);
+        }
+        .left-side p{
+            padding-left: 15px;
+            padding-bottom: 10px;
+        }
+        .left-side h4{
+            padding-top: 15px;
+            padding-left: 15px;
+        }
+
+         /*RIGHT SIDE Section*/
+
+        .right-side{
+            flex-grow: 1;
+            min-height: 1428px;
+            margin-left: 20px;
+        }
+        .right-side h1{
+            margin-left: 5px;
+            padding-bottom: 10px;
+            padding-top: 5px;
+
+        }
+        .right-side h5{
+            padding-bottom:15px;
+        }
+        .right-side p{
+            padding-top: 16px;
+        }
+        .right-side h2{
+            padding-top: 10px;
+        }
+        .right-side img{
+            border: 10px solid gray;
+        }
+        .right-side img:hover{
+            transform: scale(1.01);
+        }
+        .react h2{
+            padding-top: 25px;
+        }
+        .react h5{
+            padding-top: 15px;
+        }
+
+         /*Footer Section*/
+        
+        footer{
+            display: flex;
+            justify-content: space-around;
+            background-color: gray;
+            }
+
+            .about{
+                color: white;
+                list-style: none;
+                padding-top: 35px;
+
+            }
+            .about h1{
+                padding-bottom: 15px;
+            }
+            .about li{
+                padding:7px;
+            }
+            .about li a{
+                text-decoration: none;
+                color: white;
+               
+            }
+            .resources{
+                color: white;
+                list-style: none;
+                padding-top: 35px;
+
+            }
+            .resources h1{
+                padding-bottom: 15px;
+            }
+            .resources li{
+                padding: 7px;
+
+            }
+            .resources li a{
+                text-decoration: none;
+                color: white;
+
+            }
+            .contact{
+                color: white;
+                list-style: none;
+                padding-top: 35px;
+
+            }
+            .contact h1{
+                padding-bottom: 15px;
+
+            }
+            .contact li{
+                padding: 7px;
+            }
+            .contact li a{
+                text-decoration: none;
+                color: white;
+
+            }
+            .stay-update{
+                color: white;
+                padding-top: 35px;
+            }
+            .stay-update p{
+                color: #dedddd;
+                padding-top: 15px;
+            } 
+            .stay-update input{
+                padding-top: 5px;
+                margin-top: 10px;
+                width: 59%;
+                border: 2px solid white;
+                padding-left: 3px;
+                padding-bottom: 5px;
+            }
+            .stay-update button{
+                margin-left: 0px;
+                padding-top: 6px;
+                padding-bottom: 6px;
+                width: 30%;
+                color: white;
+                background-color: #19ea2a;
+                border: none;
+            }
+
+             /*Media Qurey Section*/
+
+
+          @media screen {
+            
+          }
+
+
+
+
+    </style>
+</head>
+<body>
+    <!--Header-->
+    
+    <header>
+        <h1>Front EndHub</h1>
+        <p>Learn from Expets</p>
+    </header>
+    <div class="nav">
+        <ul>
+        
+            <li><a href="">Home</a></li>
+            <li><a href="">About us</a></li>
+            <li><a href="">Service</a></li>
+            <li><a href="">Gallery</a></li>
+            <li><a href="">Contact us</a></li>
+
+        </ul>
+    </div>
+
+    <!--Contant-->
+
+    <div class="container-md">
+        
+        <div class="left-side">
+            <h1>Category</h1>
+            <img src="what_is_image_Processing.jpg" alt="">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt commodi asperiores facilis repellendus illo provident, sequi autem exercitationem inventore eligendi deleniti beatae nam iure nostrum molestiae rem libero est quisquam?</p>
+            <h4>Web Development refers to the creating, bulding, and maintaining of websites</h4>
+            <img src="derick-mckinney-oARTWhz1ACc-unsplash.jpg" alt="">
+            <img src="type.jpg" alt="">
+            <img src="stock.jpg" alt="">
+        </div>
+
+        <div class="right-side">
+            <h1>JavaScript</h1>
+            <h5>title description, Dec 7,2017</h5>
+            <img src="image-7.png" alt="">
+            <h2>What is JavaScripit</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et voluptatem, aspernatur beatae esse obcaecati veritatis, sequi numquam placeat cum alias sunt minus magni? Quaerat blanditiis veniam pariatur consequatur vero dignissimos quidem rem aspernatur, error placeat sunt deserunt earum excepturi eum eaque, facilis praesentium molestias dolorum quisquam provident. Nisi sunt, quidem pariatur nostrum facilis ipsa libero deserunt optio fugiat excepturi error neque harum. Voluptas consectetur minus praesentium saepe quis amet facere illum ipsam recusandae! Eaque sint obcaecati, </p>
+            
+            <div class="react">
+                <h2>What is React</h2>
+                <h5>Title description, sep 2, 2017</h5>
+                <img src="React_Banner.png" alt="" width="100%">
+                <h2>React</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod consectetur dicta eos, cupiditate magnam exercitationem alias veritatis ut dignissimos expedita qui officia itaque natus reiciendis veniam mollitia amet praesentium inventore quisquam enim et quaerat. Saepe optio tempora, odit, cumque fugiat sit, eaque deleniti reprehenderit quo dignissimos vero laudantium repudiandae dolorem? Ipsum, maiores eius alias cum quod labore asperiores modi, accusamus ea maxime enim quibusdam sint optio perspiciatis?</p>
+            </div>
+        </div>
+
+    </div>
+
+    <!--footer-->
+
+    <footer>
+    <div class="about">
+        <h1> About</h1>
+        <li><a href="">Services</a></li>
+        <li><a href="">Portfolio</a></li>
+        <li><a href="">Pricing</a></li>
+        <li><a href="">Customers</a></li>
+        <li><a href="">Careers</a></li>
+    </div>
+    <div class="resources">
+
+        <h1>Resources</h1>
+        <li><a href="">Docs</a></li>
+        <li><a href="">Blog</a></li>
+        <li><a href="">eBooks</a></li>
+        <li><a href="">Webinars</a></li>
+    </div>
+    
+        <div class="contact">
+            <h1>Contact</h1>
+            <li><a href="">Help</a></li>
+            <li><a href="">Sales</a></li>
+            <li><a href="">Avertise</a></li>
+        </div>
+
+        <div class="stay-update">
+            <h1>Stay Update</h1>
+            <p>Subscribe to our newsletter to get our latest news</p>
+            <input type="email" placeholder="Enter email addrass"><button>subscribe</button>
+
+        </div>
+      
+     </footer>
+     <a href="#">This is an example link</a>
+
+     <div class="mb-1">
+        <label for="exampleFormControlInput1" class="form-label">Email address</label>
+        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+      </div>
+      <div class="mb-3">
+        <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+      </div>
+
+
+
+      <form class="row g-3">
+        <div class="col-md-4">
+          <label for="validationServer01" class="form-label">First name</label>
+          <input type="text" class="form-control is-valid" id="validationServer01" value="Mark" required>
+          <div class="valid-feedback">
+            Looks good!
+          </div>
+        </div>
+        <div class="col-md-4">
+          <label for="validationServer02" class="form-label">Last name</label>
+          <input type="text" class="form-control is-valid" id="validationServer02" value="Otto" required>
+          <div class="valid-feedback">
+            Looks good!
+          </div>
+        </div>
+        <div class="col-md-4">
+          <label for="validationServerUsername" class="form-label">Username</label>
+          <div class="input-group has-validation">
+            <span class="input-group-text" id="inputGroupPrepend3">@</span>
+            <input type="text" class="form-control is-invalid" id="validationServerUsername" aria-describedby="inputGroupPrepend3 validationServerUsernameFeedback" required>
+            <div id="validationServerUsernameFeedback" class="invalid-feedback">
+              Please choose a username.
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <label for="validationServer03" class="form-label">City</label>
+          <input type="text" class="form-control is-invalid" id="validationServer03" aria-describedby="validationServer03Feedback" required>
+          <div id="validationServer03Feedback" class="invalid-feedback">
+            Please provide a valid city.
+          </div>
+        </div>
+        <div class="col-md-3">
+          <label for="validationServer04" class="form-label">State</label>
+          <select class="form-select is-invalid" id="validationServer04" aria-describedby="validationServer04Feedback" required>
+            <option selected disabled value="">Choose...</option>
+            <option>...</option>
+          </select>
+          <div id="validationServer04Feedback" class="invalid-feedback">
+            Please select a valid state.
+          </div>
+        </div>
+        <div class="col-md-3">
+          <label for="validationServer05" class="form-label">Zip</label>
+          <input type="text" class="form-control is-invalid" id="validationServer05" aria-describedby="validationServer05Feedback" required>
+          <div id="validationServer05Feedback" class="invalid-feedback">
+            Please provide a valid zip.
+          </div>
+        </div>
+        <div class="col-12">
+          <div class="form-check">
+            <input class="form-check-input is-invalid" type="checkbox" value="" id="invalidCheck3" aria-describedby="invalidCheck3Feedback" required>
+            <label class="form-check-label" for="invalidCheck3">
+              Agree to terms and conditions
+            </label>
+            <div id="invalidCheck3Feedback" class="invalid-feedback">
+              You must agree before submitting.
+            </div>
+          </div>
+        </div>
+        <div class="col-12">
+          <button class="btn btn-primary" type="submit">Submit form</button>
+        </div>
+      </form>
+
+
+      <div id="liveAlertPlaceholder"></div>
+<button type="button" class="btn btn-primary" id="liveAlertBtn">Show live alert</button>
+
+<button type="button" class="btn btn-primary">
+    Notifications <span class="badge text-bg-secondary">4</span>
+  </button>
+
+
+  <p class="d-inline-flex gap-1">
+    <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+      Link with href
+    </a>
+    <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+      Button with data-bs-target
+    </button>
+  </p>
+  <div class="collapse" id="collapseExample">
+    <div class="card card-body">
+      Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+    </div>
+  </div>
+
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    
+    
+</body>
+</html>
